@@ -1,4 +1,4 @@
-# Proyecto-encriptaci-n-de-im-genes-generativa
+# Proyecto-encriptacion-de-imagenes-generativa-:D
 Para la clase (TC1038): Fundamentos de programación 
 Tema elegido: “encriptación” de imágenes
 
