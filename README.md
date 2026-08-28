@@ -14,8 +14,9 @@ n se usa en el siguiente párrafo para representar el número asignado por Pytho
 
 Para cada valor n de ambas listas img guarda un flotante que equivalga a: ((valor número n de imgreclusa) / (valor número n de imgllave)). De tal forma que multiplicando cada n de imgllave por su flotante correspondiente se obtengan los valores de imgreclusa. Entonces serían estos float los factoresdecerradura
 
-imagen representativa del proceso propuesto: 
-<img width="2420" height="1668" alt="IMG_4323" src="https://github.com/user-attachments/assets/4bda408f-45fe-45c5-aa73-9a8fe4d83ee3" />
+imagen representativa de la propuesta:
+<img width="2420" height="1668" alt="IMG_4324" src="https://github.com/user-attachments/assets/0ec9c212-6ab0-48e5-9ce6-14662d0b9209" />
+
 
 Limitaciones: 
 *Ambas imagenes tendrían que estar en la misma resolución para emparejar sus valores
