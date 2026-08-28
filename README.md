@@ -23,7 +23,7 @@ Limitaciones:
 *Es posible que de usar este método el programa solo soporte ciertas resoluciones en específico para tener preparado el número de variables a definir.
 
 Extra:
-Muchas de las herramientas que necesito para ejecutar el programa las aprenderé a través del curso, así mismo me comprometo a investigar por mi cuenta sobre aquellas que quizá no contenga el plan de estudios como por ejemplo el uso de las librerías para transformar imágenes a listas de matrices. Por ejemplo aún necesito averiguar más a detalle qué tan viable es la propuesta que tengo para los factoresdecerradura para el tipo de información numérica que tienen los colores de un píxel. 
+Muchas de las herramientas que necesito para ejecutar el programa las aprenderé a través del curso, así mismo me comprometo a investigar por mi cuenta sobre aquellas que quizá no contenga el plan de estudios como por ejemplo el uso de las librerías para transformar imágenes a listas de matrices. Además aún necesito averiguar más a detalle qué tan viable es la propuesta que tengo para los factoresdecerradura para el tipo de información numérica que procesa Python para los colores de un píxel. 
 
 Desconozco si el término “encriptar” resulta adecuado para el algoritmo descrito, por ello añado las comillas y esta aclaración. 
 
