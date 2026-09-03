@@ -1,8 +1,8 @@
 # AVANCE 2
 # Como el programa nececita verificar que la resolucion de las imagenes descompuestas en listas sea la misma, es decir que las listas tengan la misma cantidad de elementos, en este avance me enfoque en hacer esa función en particular.
-verify=0
 # La variable "verify" verifica que ambas listas hayan sido definidas por input del usuario antes de que se ejecute el while. 0 sifnifica "no se han definido los valores" y 1 "ya se han definido los valores"
 # No se utilizaron muchos operadores aritmeticos en este avance porque la parte de mi proyecto que los nececita emplea temas posteriores del curso. Mi proyecto nececita operadores aritmeticos para manejar con listas anidadas. Por lo anterior decidí avanzar con otras cosas como condicionales, estructuras de decisión y arreglos.
+verify=0
 print("Introduzca su primer grupo de valores sin espacios en la forma -> 123, el sistema los leerá como una lista así -> [1, 2, 3].")
 img1 = list(input())
 print("Introduzca su segundo grupo de valores en la misma forma :)")
