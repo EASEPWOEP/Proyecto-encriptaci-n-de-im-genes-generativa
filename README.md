@@ -1,4 +1,5 @@
-#AVANCE 3
+# AVANCE 3
+# El siguiente fragmento de código es parte de lo que se encarga de imprimir el código de una cerradura.py la cual tiene que realizar cálculos con los valores de unas listas en particular. Específicamente estas funciones se encargan de crear tantas variables sean nececarias para transferir cada valor de la lista a la cerradura.py, esto porque para los propósitos del proyecto la longitud de las listas puede variar. Se incluyen entre el presente código el vestigio de los resultados de pruebas realizadas durante el desarrollo a manera de denotar la utilidad de la modularidad con funciónes al evaluar un programa. 
 List = [[], [], []]
 
 def guardar(hallo):
@@ -8,20 +9,14 @@ def guardar(hallo):
     if len(hallo) == len(Lisp):
       return Lisp
 
-
-#print(guardar(List)) # --- [['Var', '0'], ['Var', '1'], ['Var', '2']]
+# print(guardar(List)) # --- [['Var', '0'], ['Var', '1'], ['Var', '2']]
 
 def escribir (hello):
-  #mfwrite = open('\\Mahfile.txt', 'w')
   for i in range(len(hello)):
-    # (2.0*)
+	# (2.0*)
     print(''.join(hello[0+i]),'=',List[0+i])
     if i == (len(hello)-1):
         e=1
-        #mfwrite.close()
-        #mfread = open('Mahfile.txt', 'r')
-        #return mfread.read()
-        #mfread.close()
 
 
 # (2.0*)# escribir([['Var', '0'], ['Var', '1'], ['Var', '2']])
@@ -29,22 +24,15 @@ def escribir (hello):
 # --- Var1 = [] 
 # --- Var2 = []
 
+print("Variables para la lista:", List)
 escribir(guardar(List))
+List = [[7], [7], [7]]
+print("Variables para la lista: ", List)
+escribir(guardar(List))
+List = [[6,7], [6,7], [6,7]]
+print("Variables para la lista: ", List)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+escribir(guardar(List))
 
 
 
