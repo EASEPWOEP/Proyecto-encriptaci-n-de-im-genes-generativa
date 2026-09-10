@@ -1,3 +1,57 @@
+#AVANCE 3
+List = [[], [], []]
+
+def guardar(hallo):
+  Lisp = []
+  for i in range(len(hallo)):
+    Lisp.append(["Var",str(i)])
+    if len(hallo) == len(Lisp):
+      return Lisp
+
+
+#print(guardar(List)) # --- [['Var', '0'], ['Var', '1'], ['Var', '2']]
+
+def escribir (hello):
+  #mfwrite = open('\\Mahfile.txt', 'w')
+  for i in range(len(hello)):
+    # (2.0*)
+    print(''.join(hello[0+i]),'=',List[0+i])
+    if i == (len(hello)-1):
+        e=1
+        #mfwrite.close()
+        #mfread = open('Mahfile.txt', 'r')
+        #return mfread.read()
+        #mfread.close()
+
+
+# (2.0*)# escribir([['Var', '0'], ['Var', '1'], ['Var', '2']])
+# --- Var0 = [] 
+# --- Var1 = [] 
+# --- Var2 = []
+
+escribir(guardar(List))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AVANCE 2
 # Como el programa nececita verificar que la resolucion de las imagenes descompuestas en listas sea la misma, es decir que las listas tengan la misma cantidad de elementos, en este avance me enfoque en hacer esa función en particular.
 # La variable "verify" verifica que ambas listas hayan sido definidas por input del usuario antes de que se ejecute el while. 0 sifnifica "no se han definido los valores" y 1 "ya se han definido los valores"
