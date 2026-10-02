@@ -1,79 +1,9 @@
-# AVANCE 3
-# El siguiente fragmento de código es parte de lo que se encarga de imprimir el código de una cerradura.py la cual tiene que realizar cálculos con los valores de unas listas en particular. Específicamente estas funciones se encargan de crear tantas variables sean nececarias para transferir cada valor de la lista a la cerradura.py, esto porque para los propósitos del proyecto la longitud de las listas puede variar. Se incluyen entre el presente código el vestigio de los resultados de pruebas realizadas durante el desarrollo a manera de denotar la utilidad de la modularidad con funciónes al evaluar un programa. 
-List = [[], [], []]
 
-def guardar(hallo):
-  Lisp = []
-  for i in range(len(hallo)):
-    Lisp.append(["Var",str(i)])
-    if len(hallo) == len(Lisp):
-      return Lisp
-
-# print(guardar(List)) # --- [['Var', '0'], ['Var', '1'], ['Var', '2']]
-
-def escribir (hello):
-  for i in range(len(hello)):
-	# (2.0*)
-    print(''.join(hello[0+i]),'=',List[0+i])
-    if i == (len(hello)-1):
-        e=1
-
-
-# (2.0*)# escribir([['Var', '0'], ['Var', '1'], ['Var', '2']])
-# --- Var0 = [] 
-# --- Var1 = [] 
-# --- Var2 = []
-
-print("Variables para la lista:", List)
-escribir(guardar(List))
-List = [[7], [7], [7]]
-print("Variables para la lista: ", List)
-escribir(guardar(List))
-List = [[6,7], [6,7], [6,7]]
-print("Variables para la lista: ", List)
-
-escribir(guardar(List))
-
-
-
-
-
-
-
-# AVANCE 2
-# Como el programa nececita verificar que la resolucion de las imagenes descompuestas en listas sea la misma, es decir que las listas tengan la misma cantidad de elementos, en este avance me enfoque en hacer esa función en particular.
-# La variable "verify" verifica que ambas listas hayan sido definidas por input del usuario antes de que se ejecute el while. 0 sifnifica "no se han definido los valores" y 1 "ya se han definido los valores"
-# No se utilizaron muchos operadores aritmeticos en este avance porque la parte de mi proyecto que los nececita emplea temas posteriores del curso. Mi proyecto nececita operadores aritmeticos para manejar con listas anidadas. Por lo anterior decidí avanzar con otras cosas como condicionales, estructuras de decisión y arreglos.
-verify=0
-print("Introduzca su primer grupo de valores sin espacios en la forma -> 123, el sistema los leerá como una lista así -> [1, 2, 3].")
-img1 = list(input())
-print("Introduzca su segundo grupo de valores en la misma forma :)")
-img2 = list(input())
-res1=len(img1)
-res2=len(img2)
-verify=verify+1
-while res1 != res2 and verify==1:
-  print("Las listas no se pueden procesar, tienen que tener la misma cantidad de elementos >:D")
-  print("Reintroduzca su primer grupo de valores sin espacios en la forma -> 123, el sistema los leerá como una lista así -> [1, 2, 3].")
-  img1 = input()
-  print("Introduzca su segundo grupo de valores en la misma forma")
-  img2 = input()
-  res1=len(img1)
-  res2=len(img2)
-if res1 == res2 and verify==1:
-	print("Las listas se pueden procesar :D")
-# No incluí un modulo que verifique que los valores de las listas sean estrictamenten númericos asi como uno que permita al usuario meter valores con dos decimales porque en el programa final los valores de las listas no serán dados por el usuario directamente como aquí. El input será una imagen que el programa descompondrá en listas, entonces ya en dicha forma se tendra que verificar que estas tengan la misma cantidad de elementos para proseguir. Lo importante aqui es el conteo de elementos, la entrada del usuario solo se incluye para facilitar el proceso de prueba :D
-
-
-
-
-
-# AVANCE 1
 # Proyecto-encriptacion-de-imagenes-generativa-:D
 # Para la clase (TC1038): Fundamentos de programación 
 # Tema elegido: “encriptación” de imágenes
 
-# Proyecto: un cerrajero.py que pueda configurarse por el usuario para generar el código de distintas cerradura.py que al ingresarles una imagen especifica creen a partir de esta otra imagen particular utilizando la relación que existe entre ambas imágenes. De modo que si se elimina al cerrajero.py original sea difícil acceder a esa información por ejemplo para un malware que ha descargado sus archivos, siempre que se elimine la imagen “encriptada” inmediatamente después de auditarla. Cerrajero.py sería útil para compartir y consultar con mayor seguridad información sensible como contraseñas sin estar a la merced de la seguridad, transparencia y soporte de servicios de almacenamiento y mensajería digital.
+# Proyecto: un cerrajero.py que pueda configurarse por el usuario para generar el código de distintas cerradura.py que al ingresarles una imagen especifica creen a partir de esta otra imagen particular utilizando la relación que existe entre ambas imágenes. De modo que si se elimina al cerrajero.py original sea difícil acceder a esa información por ejemplo para un malware que ha descargado sus archivos, siempre que se elimine la imagen “encriptada” inmediatamente después de auditarla. Cerrajero.py sería útil para compartir y consultar con mayor seguridad información sensible como contraseñas sin estar a la merced de la seguridad, transparencia y soporte de servicios de almacenamiento y mensajería digital. 
 
 # Algoritmo: 
 # (Cerrajero.py(puede recibir dos imágenes como entrada del usuario ->  descompone los valores de los pixeles de las imágenes dadas en matrices que guarda en las listas imgreclusa y imgllave respectivamente -> determina un valor que bajo cierto proceso de multiplicación permita obtener las matrices de imgreclusa a partir de las de imgllave y guarda esos valores en la lista factoresdecerradura (más detalles de este proceso al final) -> imprime al usuario el código de una cerradura.py el cual ya estaba escrito en un print con la lista factoresdecerradura insertada en una sección))
@@ -92,9 +22,11 @@ n se usa en el siguiente párrafo para representar el número asignado por Pytho
 # Limitaciones: 
 # *Es posible que ambas imagenes tengan que estar en la misma resolución para emparejar sus valores adecuadamente 
 # *Es posible que de usar este método el programa solo soporte ciertas resoluciones en específico para tener preparado el número de variables a definir.
+# *Es posible que se tenga que cambiar el enfoque del proyecto ligeramente de imágenes a solo mensajes con listas, esto si es que resulta muy complicado obtener las matrices que representan a las imágenes desde los propios archivos. Python es un lenguaje de alto nivel por lo que el acceso a este nivel de informacion es limitado.
+
 
 # Extra:
 # Muchas de las herramientas que necesito para ejecutar el programa las aprenderé a través del curso, así mismo me comprometo a investigar por mi cuenta sobre aquellas que quizá no contenga el plan de estudios como por ejemplo el uso de las librerías para transformar imágenes a listas de matrices. Además aún necesito averiguar más a detalle qué tan viable es la propuesta que tengo para los factoresdecerradura para el tipo de información numérica que procesa Python para los colores de un píxel. 
 
-# Desconozco si el término “encriptar” resulta adecuado para el algoritmo descrito, por ello añado las comillas y esta aclaración. 
+
 
